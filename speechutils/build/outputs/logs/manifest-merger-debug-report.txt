@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+	package
+		ADDED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:11-52
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+		ADDED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+		ADDED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml:2:1-4:12
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+		ADDED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+		ADDED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml
+		INJECTED from /home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/AndroidManifest.xml

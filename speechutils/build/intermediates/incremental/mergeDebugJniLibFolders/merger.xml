@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/sshekhar/Downloads/alex/doopler/android/doopler-app/Alexa-On-Android/AlexaDemo/speechutils/src/debug/jniLibs"/></dataSet></merger>
