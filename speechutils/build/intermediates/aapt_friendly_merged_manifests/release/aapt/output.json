@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "ee.ioc.phon.android.speechutils",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "AAPT_FRIENDLY_MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 208,
+        "versionName": "0.2.08",
+        "outputFile": "speechutils-release.aar",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "ee.ioc.phon.android.speechutils",
+        "split": ""
+      }
+    }
+  ]
+}

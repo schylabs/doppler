@@ -1,4 +1,4 @@
-package com.vishwanath.voiceqube;
+package com.doopler.voiceqube;
 
 import android.content.Context;
 

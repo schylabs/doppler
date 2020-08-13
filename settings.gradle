@@ -1,2 +1,3 @@
+include ':speechutils'
 include ':app'
 rootProject.name = "VoiceQube"
