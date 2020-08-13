@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.ui;
+package com.doopler.voiceqube.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,14 +9,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 import com.squareup.picasso.Picasso;
+import com.doopler.voiceqube.R;
+import com.doopler.voiceqube.connect.AvsTemplateItem;
+import com.doopler.voiceqube.connect.Directive;
 
 import java.util.List;
-
-import alexademo.ellison.test.alexademo.R;
-import alexademo.ellison.test.alexademo.connect.AvsTemplateItem;
-import alexademo.ellison.test.alexademo.connect.Directive;
 
 public class WeatherTemplateView extends RelativeLayout {
     private ImageView mCloseView;
@@ -52,7 +50,7 @@ public class WeatherTemplateView extends RelativeLayout {
         mCurrentTemperatureView = findViewById(R.id.current_temperature);
         mCurrentWeatherIconView = findViewById(R.id.current_weather_icon);
         mForcastLinear = findViewById(R.id.wather_forecast_linear);
-        mCloseView.setOnClickListener(new View.OnClickListener() {
+        mCloseView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 setVisibility(GONE);

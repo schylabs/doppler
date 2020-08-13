@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.ui;
+package com.doopler.voiceqube.ui;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -6,12 +6,12 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
-import alexademo.ellison.test.alexademo.R;
+import androidx.core.content.ContextCompat;
 
+import com.doopler.voiceqube.R;
 /**
  * @author willb_000 on 5/5/2016.
  */

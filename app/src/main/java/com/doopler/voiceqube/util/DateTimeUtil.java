@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.util;
+package com.doopler.voiceqube.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

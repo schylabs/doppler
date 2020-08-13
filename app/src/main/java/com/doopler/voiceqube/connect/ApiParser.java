@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.connect;
+package com.doopler.voiceqube.connect;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -21,9 +21,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import okhttp3.Headers;
-import okhttp3.Response;
 
 public class ApiParser {
     private static final String TAG = ApiParser.class.getName();

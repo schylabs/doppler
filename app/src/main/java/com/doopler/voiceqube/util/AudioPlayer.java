@@ -1,18 +1,14 @@
-package alexademo.ellison.test.alexademo.util;
+package com.doopler.voiceqube.util;
 
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.Uri;
-import android.support.v4.content.ContextCompat;
+
+import com.doopler.voiceqube.connect.AvsSpeakItem;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-
-import alexademo.ellison.test.alexademo.connect.AvsSpeakItem;
 
 public class AudioPlayer {
     private MediaPlayer mMediaPlayer;

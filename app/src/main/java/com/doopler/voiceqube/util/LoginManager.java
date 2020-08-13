@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.util;
+package com.doopler.voiceqube.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -16,18 +16,17 @@ import com.amazon.identity.auth.device.api.authorization.AuthorizeResult;
 import com.amazon.identity.auth.device.api.authorization.ScopeFactory;
 import com.amazon.identity.auth.device.api.workflow.RequestContext;
 import com.google.gson.Gson;
+import com.doopler.voiceqube.connect.ClientUtil;
+import com.doopler.voiceqube.global.Constant;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
 
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
-import alexademo.ellison.test.alexademo.connect.ClientUtil;
-import alexademo.ellison.test.alexademo.global.Constant;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;

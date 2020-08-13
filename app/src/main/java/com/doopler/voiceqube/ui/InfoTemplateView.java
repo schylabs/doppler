@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.ui;
+package com.doopler.voiceqube.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import alexademo.ellison.test.alexademo.R;
-import alexademo.ellison.test.alexademo.connect.AvsTemplateItem;
+import com.doopler.voiceqube.R;
+import com.doopler.voiceqube.connect.AvsTemplateItem;
 
 public class InfoTemplateView extends RelativeLayout{
     private TextView mTitleView;

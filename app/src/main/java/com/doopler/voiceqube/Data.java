@@ -1,4 +1,4 @@
-package com.vishwanath.voiceqube;
+package com.doopler.voiceqube;
 
 public class Data {
     static boolean alexaStatus = true;

@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.ui;
+package com.doopler.voiceqube.ui;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
-
-import alexademo.ellison.test.alexademo.R;
 
 public class AboutDialog extends Dialog{
     public AboutDialog(Context context) {
@@ -22,6 +20,6 @@ public class AboutDialog extends Dialog{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.view_about_dialog);
+        //setContentView(R.layout.view_about_dialog);
     }
 }

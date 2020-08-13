@@ -1,8 +1,7 @@
-package alexademo.ellison.test.alexademo.connect;
+package com.doopler.voiceqube.connect;
 
 import android.os.Build;
 import android.util.Log;
-
 
 import java.io.IOException;
 import java.security.KeyStore;

@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:background="@drawable/template_bg"
+        android:background="@drawable/bottom_sheet_background"
         android:gravity="left"
         android:orientation="vertical"
         android:padding="20dp">
@@ -40,7 +40,7 @@
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@mipmap/github" />
+                android:src="@mipmap/ic_launcher_round" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@mipmap/linkedin" />
+                android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:layout_width="wrap_content"

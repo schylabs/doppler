@@ -1,6 +1,5 @@
-package alexademo.ellison.test.alexademo.connect;
+package com.doopler.voiceqube.connect;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ApiResponse {

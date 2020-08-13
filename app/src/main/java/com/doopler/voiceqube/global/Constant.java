@@ -1,7 +1,7 @@
-package alexademo.ellison.test.alexademo.global;
+package com.doopler.voiceqube.global;
 
 /**
- * Created by ellisonyang on 2018/9/4.
+ * Created by shashank on 2020/06/08.
  */
 
 public class Constant {

@@ -1,22 +1,19 @@
-package alexademo.ellison.test.alexademo.connect;
+package com.doopler.voiceqube.connect;
 
 import android.content.Context;
-import android.os.Handler;
 import android.util.Log;
-import android.widget.Toast;
 
-import java.io.ByteArrayOutputStream;
+import com.doopler.voiceqube.R;
+import com.doopler.voiceqube.util.LoginManager;
+
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import alexademo.ellison.test.alexademo.R;
-import alexademo.ellison.test.alexademo.util.LoginManager;
 import okhttp3.Call;
 import okhttp3.Headers;
-import okhttp3.Interceptor;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.Request;

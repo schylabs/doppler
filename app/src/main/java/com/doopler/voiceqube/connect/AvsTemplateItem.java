@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.connect;
+package com.doopler.voiceqube.connect;
 
 public class AvsTemplateItem extends AvsItem {
    private Directive.Payload mPayLoad;

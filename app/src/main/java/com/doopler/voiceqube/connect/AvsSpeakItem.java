@@ -1,4 +1,4 @@
-package alexademo.ellison.test.alexademo.connect;
+package com.doopler.voiceqube.connect;
 
 import org.apache.commons.io.IOUtils;
 
