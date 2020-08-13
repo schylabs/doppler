@@ -1,6 +1,7 @@
 package com.doopler.voiceqube;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -31,6 +32,7 @@ import com.doopler.voiceqube.ui.WeatherTemplateView;
 import com.doopler.voiceqube.util.AudioPlayer;
 import com.doopler.voiceqube.util.DateTimeUtil;
 import com.doopler.voiceqube.util.LoginManager;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.io.File;
@@ -45,7 +47,7 @@ import ee.ioc.phon.android.speechutils.RawAudioRecorder;
 public class MainActivity extends AppCompatActivity {
     private String TAG = MainActivity.class.getName();
     private RequestContext mRequestContext;
-    private View mLoginButton, mPressButton, mPulseView, mProcessingView;
+    private View mLoginButton, mPulseView, mProcessingView;
     private RawAudioRecorder mRecorder;
     private static final int AUDIO_RATE = 16000;
     private boolean isRecording = false;
@@ -66,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final View view = this.getWindow().getDecorView();
         ImageView alexa = findViewById(R.id.imageView3);
-        mPressButton = findViewById(R.id.press_button);
         final ImageView disable = findViewById(R.id.imageView2);
         //login
         LoginManager.init(this);
@@ -83,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
         mProcessingView = findViewById(R.id.processing_view);
 
         mLoginButton.setVisibility(LoginManager.isLogin() ? View.GONE : View.VISIBLE);
-        mPressButton.setVisibility(LoginManager.isLogin() ? View.VISIBLE : View.GONE);
 
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,30 +105,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mPressButton.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        //long press to listen
-                        startListening();
-                        break;
 
-                    case MotionEvent.ACTION_MOVE:
-                        break;
-
-                    case MotionEvent.ACTION_UP:
-                        //release to stop recording and send request to alexa
-                        stopListening();
-                        break;
-
-                    default:
-                        break;
-                }
-
-                return true;
-            }
-        });
 
         setLoginStatus();
 
@@ -143,8 +120,22 @@ public class MainActivity extends AppCompatActivity {
                         );
                 bottomSheetDialog.setContentView(bottomSheetView);
                 bottomSheetDialog.show();
+                if(LoginManager.isLogin()) {
+                    startListening();
+                }
+                else {
+                    TextView textView = bottomSheetView.findViewById(R.id.speak);
+                    textView.setText("Please Login First");
+                }
+                bottomSheetDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        stopListening();
+                    }
+                });
             }
         });
+
         disable.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
@@ -193,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         mLoginButton.setVisibility(LoginManager.isLogin() ? View.GONE : View.VISIBLE);
-        mPressButton.setVisibility(LoginManager.isLogin() ? View.VISIBLE : View.GONE);
+//        mPressButton.setVisibility(LoginManager.isLogin() ? View.VISIBLE : View.GONE);
     }
 
     private void startListening() {
