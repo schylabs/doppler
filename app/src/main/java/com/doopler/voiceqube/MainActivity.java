@@ -7,7 +7,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -15,25 +14,19 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
 import com.amazon.identity.auth.device.api.workflow.RequestContext;
-import com.doopler.voiceqube.connect.ApiResponse;
-import com.doopler.voiceqube.connect.AvsItem;
-import com.doopler.voiceqube.connect.AvsSpeakItem;
-import com.doopler.voiceqube.connect.AvsTemplateItem;
-import com.doopler.voiceqube.connect.ConnectManager;
+import com.doopler.voiceqube.connect.*;
 import com.doopler.voiceqube.ui.InfoTemplateView;
 import com.doopler.voiceqube.ui.WeatherTemplateView;
 import com.doopler.voiceqube.util.AudioPlayer;
 import com.doopler.voiceqube.util.DateTimeUtil;
 import com.doopler.voiceqube.util.LoginManager;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import ee.ioc.phon.android.speechutils.RawAudioRecorder;
 
 import java.io.File;
 import java.text.Format;
@@ -41,8 +34,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import ee.ioc.phon.android.speechutils.RawAudioRecorder;
 
 public class MainActivity extends AppCompatActivity {
     private String TAG = MainActivity.class.getName();
@@ -120,8 +111,12 @@ public class MainActivity extends AppCompatActivity {
                         );
                 bottomSheetDialog.setContentView(bottomSheetView);
                 bottomSheetDialog.show();
-                if(LoginManager.isLogin()) {
+                if((LoginManager.isLogin()) && (Data.disableStatus)) {
                     startListening();
+                }
+                else if(!Data.disableStatus){
+                    TextView textView = bottomSheetView.findViewById(R.id.speak);
+                    textView.setText("Please unmute");
                 }
                 else {
                     TextView textView = bottomSheetView.findViewById(R.id.speak);

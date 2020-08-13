@@ -81,19 +81,19 @@
         android:visibility="gone" />
 
     <TextView
-        android:id="@+id/login_button"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:background="#FFC300"
-        android:clickable="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:gravity="center"
-        android:text="Login With Amazon"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="187dp" />
+            android:id="@+id/login_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="#FFC300"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:text="Login With Amazon"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
 
 
 
